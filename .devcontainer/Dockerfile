@@ -1,6 +1,6 @@
-# PHP‚ÆApache‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚½OfficialƒCƒ[ƒW‚ðPull‚µ‚Ü‚·B
+# PHPã¨ApacheãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚ŒãŸOfficialã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’Pullã—ã¾ã™ã€‚
 FROM php:7.4-apache
  
-# C³‚µ‚½ƒ\[ƒXƒR[ƒh‚ðGitƒŠƒ|ƒWƒgƒŠ‚ÉƒAƒbƒv‚·‚é‚½‚ß‚É
-# ƒRƒ“ƒeƒiã‚ÉGit‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+# ä¿®æ­£ã—ãŸã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’Gitãƒªãƒã‚¸ãƒˆãƒªã«ã‚¢ãƒƒãƒ—ã™ã‚‹ãŸã‚ã«
+# ã‚³ãƒ³ãƒ†ãƒŠä¸Šã«Gitã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™ã€‚
 RUN apt-get update && apt-get -y install git

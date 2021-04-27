@@ -1,21 +1,21 @@
 {
-  # �ݒ����ӂɎ��ʂ���C�ӂ̖��̂ł��B
+  # 設定を一意に識別する任意の名称です。
   "name": "Hello",
  
-  # �R���e�i���쐬���邽�߂�Dockerfile�̃t�@�C�������w�肵�܂��B
-  # Dockerfile�̓��e�ɂ��Ă͌�q���܂��B
+  # コンテナを作成するためのDockerfileのファイル名を指定します。
+  # Dockerfileの内容については後述します。
   "dockerFile": "Dockerfile",
  
-  # ���̐ݒ�ɂ��z�X�gOS��80���̒ʐM���R���e�i��80�ɓ]������܂��B
-  # �z�X�gPC����u���E�U�œ���m�F���邽�߂ɕK�v�ł��B
+  # この設定によりホストOSの80宛の通信がコンテナの80に転送されます。
+  # ホストPCからブラウザで動作確認するために必要です。
   "forwardPorts": [80],
  
-  # �f�t�H���g�ł�Visual Studio Code����̃R���e�i�N�����̃R�}���h��
-  # while sleep 1000; do :; done�ɏ㏑������Ă��܂��܂����A�����h�~���܂��B
+  # デフォルトではVisual Studio Codeからのコンテナ起動時のコマンドは
+  # while sleep 1000; do :; doneに上書きされてしまいますが、それを防止します。
   "overrideCommand": false,
  
-  # Git���|�W�g����src�f�B���N�g�����AApache�̃h�L�������g���[�g�ł���/var/www/html��
-  # �}�E���g���܂��B
+  # Gitリポジトリのsrcディレクトリを、Apacheのドキュメントルートである/var/www/htmlに
+  # マウントします。
   "mounts": [
     "source=${localWorkspaceFolder}/src,target=/var/www/html,type=bind,consistency=cached"
   ]
